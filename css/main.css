@@ -1,0 +1,175 @@
+* { margin:0;padding:0 }
+html,body{ height:100%; width: 100%; margin: 0; padding: 0; }
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 26px;
+}
+h2 a {
+	color: #FFFFFF;
+	background-color: #FABE49;
+}
+.container {
+	margin: 0;
+	height: 100%;
+	background: url(../images/coming-soon.jpg) no-repeat center center;
+	background-size: cover;
+}
+.container .contact {
+	width: 28%;
+	height: 256px;
+	position: absolute;
+	right: 5%;
+	top: 23%;
+	border: 12px solid #FABE49;
+	padding: 15px;
+}
+.container .contact form{
+	width: 100%;
+}
+.container .contact .subscribeText {
+	margin-top: 7%;;
+}
+.container .contact form {
+	margin-top: 5px;
+}
+.container .contact form input {
+	width: 200px;
+	height: 25px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	padding-left: 5px;
+	outline: 0;
+	background-color: #78A8D9;
+	border: 0;
+	color: #FFFFFF;
+}
+.container .contact form input.error {
+	border: 1px solid #cd2027;
+}
+.container footer {
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	background: #83361B;
+	height: 50px;;
+}
+.container footer h2 {
+	color: #FFFFFF;
+	font-weight: 300;
+}
+.container footer .brandsUrl {
+	float: left;
+	margin: 10px 0 0 50px;
+}
+.container footer ul.social {
+	list-style: none;
+	float: right;
+	margin: 10px 5% 0 0;
+}
+.container footer ul.social li {
+	float: left;
+	margin-right: 12px;
+}
+.container footer ul.social li:last-child {
+	margin-right: 0;
+}
+
+.container footer h2.siguenos{
+	float: left;
+	margin-top: 10px;
+	margin-left: 39%;
+}
+.container .contact .transbox {
+	
+	background-color: #ffffff;
+	opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    height: 256px;
+}
+
+
+/* INPUT PLACEHOLDER */
+
+.container .contact input::-webkit-input-placeholder {
+   color: #ffffff;
+}
+
+.container .contact input::-moz-placeholder {  /* Firefox 19+ */
+   color: #ffffff;  
+}
+
+.container .contact input:-ms-input-placeholder {  
+   color: #ffffff;  
+}
+
+/* media query*/
+
+@media screen and (max-width: 1382px) {
+	.container footer h2.siguenos {
+		margin-left: 26%;
+	}	
+}
+
+@media screen and (max-width: 1120px) {
+	.container footer h2.siguenos {
+		margin-left: 15%;
+	}	
+}
+
+@media screen and (max-width: 971px) {
+	.container footer h2.siguenos {
+		display:none;
+	}	
+	.container .contact h2{
+		font-size: 24px;
+	}
+}
+
+
+@media screen and (max-width: 860px) {
+	.container .contact h2{
+		font-size: 20px;
+	}
+	.container .contact form input {
+		width: 148px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.container footer h2.brandsUrl {
+		font-size: 20px;
+		margin: 10px 0 0 10px;
+	}	
+	.container .contact h2{
+		font-size: 18px;
+	}
+	.container .contact form input {
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.container footer h2.brandsUrl {
+		display:none;
+	}	
+	.container footer ul.social {
+		 float:left;		 
+		 left:50%;
+		 position:relative;
+	}
+	.container footer ul.social li {
+		 float:left;
+		 position:relative;
+		 right:50%;
+	}	
+}	
+
+@media screen and (max-width: 340px) {
+	.container .contact h2{
+		font-size: 16px;
+	}
+	.container .contact form input {
+		width: 90px;
+	}
+}
