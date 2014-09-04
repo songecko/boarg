@@ -19,7 +19,7 @@ h2 a {
 	width: 28%;
 	height: 256px;
 	position: absolute;
-	right: 5%;
+	right: 4%;
 	top: 23%;
 	border: 12px solid #FABE49;
 	padding: 15px;
@@ -137,15 +137,20 @@ h2 a {
 }
 
 @media screen and (max-width: 560px) {
-	.container footer h2.brandsUrl {
-		font-size: 20px;
-		margin: 10px 0 0 10px;
-	}	
-	.container .contact h2{
-		font-size: 18px;
+	.container .contact{
+		width: 70%;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
 	}
+
 	.container .contact form input {
-		width: 100px;
+		width: 170px;
+	}
+	.container .contact h2{
+		font-size: 22px;
 	}
 }
 
@@ -165,11 +170,20 @@ h2 a {
 	}	
 }	
 
-@media screen and (max-width: 340px) {
-	.container .contact h2{
-		font-size: 16px;
+@media screen and (max-width: 360px){
+	.container .contact{
+		width: 70%;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
 	}
+
 	.container .contact form input {
-		width: 90px;
+		width: 170px;
+	}
+	.container .contact h2{
+		font-size: 22px;
 	}
 }
