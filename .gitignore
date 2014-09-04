@@ -14,3 +14,12 @@ app/config/parameters.yml
 
 # Composer
 composer.phar
+
+# eclipse
+.externalToolBuilders
+.settings
+.buildpath
+.project
+
+#Others
+.DS_Store
