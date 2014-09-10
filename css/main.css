@@ -1,9 +1,15 @@
 * { margin:0;padding:0 }
-html,body{ height:100%; width: 100%; margin: 0; padding: 0; }
+html,body{ height:100%; width: 100%; margin: 0; padding: 0; font-size: 15px; }
+
+/* new clearfix */
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
 h2 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	font-size: 26px;
+	font-weight: 300;
+	font-size: 2em;
 }
 h2 a {
 	color: #FFFFFF;
@@ -15,12 +21,18 @@ h2 a {
 	background: url(../images/coming-soon.jpg) no-repeat center center;
 	background-size: cover;
 }
+.container .logo {
+	width: 25%;
+	position: absolute;
+	top: 10%;
+	left: 4%;
+}
+
 .container .contact {
-	width: 28%;
-	height: 256px;
+	width: 400px;
 	position: absolute;
 	right: 4%;
-	top: 23%;
+	top: 16%;
 	border: 12px solid #FABE49;
 	padding: 15px;
 }
@@ -34,15 +46,16 @@ h2 a {
 	margin-top: 5px;
 }
 .container .contact form input {
-	width: 200px;
+	width: 70%;
 	height: 25px;
 	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
-	padding-left: 5px;
+	font-size: 1.5em;
+	font-weight: normal;
 	outline: 0;
 	background-color: #78A8D9;
 	border: 0;
 	color: #FFFFFF;
+	padding: 5px;
 }
 .container .contact form input.error {
 	border: 1px solid #cd2027;
@@ -60,32 +73,46 @@ h2 a {
 }
 .container footer .brandsUrl {
 	float: left;
-	margin: 10px 0 0 50px;
+	line-height: 50px;
+	margin-left: 30px;
 }
-.container footer ul.social {
-	list-style: none;
+.container footer .siguenos {
 	float: right;
-	margin: 10px 5% 0 0;
+	margin-right: 30px;
+}
+
+.container footer .siguenos h2 {
+	float: left;
+	line-height: 50px;
+	margin-right: 10px;
+}
+
+.container footer ul.social {
+	float: left;
+	list-style: none;
 }
 .container footer ul.social li {
 	float: left;
 	margin-right: 12px;
+	padding: 5px;
 }
 .container footer ul.social li:last-child {
 	margin-right: 0;
 }
-
-.container footer h2.siguenos{
-	float: left;
-	margin-top: 10px;
-	margin-left: 39%;
-}
 .container .contact .transbox {
-	
-	background-color: #ffffff;
-	opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
-    height: 256px;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.container .contact .transbox h2 {
+	font-size: 2em;
+}
+
+.container .contact .transbox h2 a {
+	font-size: 0.8em;
+	padding: 2px;
+	text-decoration: none;
 }
 
 
@@ -103,87 +130,63 @@ h2 a {
    color: #ffffff;  
 }
 
-/* media query*/
+/* media querys */
 
-@media screen and (max-width: 1382px) {
-	.container footer h2.siguenos {
-		margin-left: 26%;
-	}	
-}
-
-@media screen and (max-width: 1120px) {
-	.container footer h2.siguenos {
-		margin-left: 15%;
-	}	
-}
-
-@media screen and (max-width: 971px) {
-	.container footer h2.siguenos {
-		display:none;
-	}	
-	.container .contact h2{
-		font-size: 24px;
+@media screen and (max-width: 971px) 
+{
+	html,body {
+		font-size: 10px;
+	}
+	
+	.container .contact {
+		width: 290px;
 	}
 }
 
-
-@media screen and (max-width: 860px) {
-	.container .contact h2{
-		font-size: 20px;
+@media screen and (max-width: 730px) 
+{	
+	.container {
+		background-position-x: 62%;
 	}
-	.container .contact form input {
-		width: 148px;
+	
+	.container .logo {
+		width: 40%;
+		margin-left: -20%;
+		left: 50%;
+		top: 10px;
 	}
-}
-
-@media screen and (max-width: 560px) {
-	.container .contact{
+	
+	.container .contact {
 		width: 70%;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto;
+		margin-left: -42%;
+		left: 50%;
+		bottom: 13%;
+		top: auto;
+		right: auto;
 	}
-
-	.container .contact form input {
-		width: 170px;
+	
+	.container footer .brandsUrl {
+		display: none;
 	}
-	.container .contact h2{
-		font-size: 22px;
+	
+	.container footer .siguenos {
+		float: none;
+		margin: 0;
+		width: 100%;
 	}
-}
-
-@media screen and (max-width: 420px) {
-	.container footer h2.brandsUrl {
-		display:none;
-	}	
+	
+	.container footer .siguenos h2 {
+		display: none;
+	}
+	
 	.container footer ul.social {
-		 float:left;		 
-		 left:50%;
-		 position:relative;
+		text-align: center;
+		float: none;
+		width: 100%;
 	}
+	
 	.container footer ul.social li {
-		 float:left;
-		 position:relative;
-		 right:50%;
-	}	
-}	
-
-@media screen and (max-width: 360px){
-	.container .contact{
-		width: 70%;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-	}
-
-	.container .contact form input {
-		width: 170px;
-	}
-	.container .contact h2{
-		font-size: 22px;
+		float: none;
+		display: inline-block;
 	}
 }
