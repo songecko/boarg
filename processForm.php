@@ -6,8 +6,7 @@ $contact = $_POST['contact'];
 $email = $contact['email'];
 
 //Envio de email
-//$to = "alant@tresepic.com";
-$to = "songecko@gmail.com";
+$to = "alant@tresepic.com";
 $subject = "[BofARG] nuevo suscripto al newsletter";
 $body = ' 
 <html> 
