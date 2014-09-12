@@ -191,10 +191,13 @@ h2 a {
 	}
 }
 
-@media screen and (max-width: 320px) 
+@media screen and (max-height: 480px)  
 {	
 
 	html, body {
 		font-size: 9px;
+	}
+	.container .contact .transbox h2 {
+		font-size: 1.9em;
 	}
 }
