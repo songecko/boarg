@@ -190,3 +190,14 @@ h2 a {
 		display: inline-block;
 	}
 }
+
+@media screen and (max-height: 480px)  
+{	
+
+	html, body {
+		font-size: 9px;
+	}
+	.container .contact .transbox h2 {
+		font-size: 1.9em;
+	}
+}
